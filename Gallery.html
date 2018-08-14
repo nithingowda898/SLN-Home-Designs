@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title>scorpion informer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="jquery.lineProgressbar.js"></script>
+	<script src="wow.min.js"></script>
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="jquery.lineProgressbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" hrref="style.css">
+	<link rel="stylesheet" hrref="style3.css">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="img3/DSC_1038.jpg" type="image/x-icon" />
+    
+   
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/pixel-metro.js"></script>
+	<link rel="stylesheet" href="css/pixel-metro.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<style>
+
+body {
+	font-family: 'Roboto Slab', serif;
+}
+.navbar-custom{
+background-color: #151717;
+	color: #FFF;
+	border-radius: 0px;
+	padding: 10px;
+}
+.navbar-custom .navbar-nav>li>a{
+	color: #FFF;
+	font-size: 19px;margin-left: 13px;
+}
+.navbar-custom .navbar-nav>.active>a{
+	color: #fff;background-color: #df6c43;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+	background-color: #df6c43;
+}
+.navbar-custom .navbar-brand{
+color: #fff;font-size: 27px;margin-left: 15px;
+}
+.navbar-custom .navbar-brand:hover{
+color: #fff;font-size: 27px;
+}
+.slider{
+	width: 100%;
+	padding: 0px;margin: 0px;
+}
+.carousel-caption{
+	color: #fff;
+	position: absolute;
+	top: 35%;
+	left:-20px;
+}
+b{
+	font-size: 40px;
+	border-bottom-style: ridge;
+	font-weight: bold;
+	border-bottom-color: #df6c43;
+}
+#Services{
+	font-size: 45px;
+	border-bottom-style: ridge;
+	font-weight: bold;
+	border-bottom-color: #df6c43;
+}
+.col1{
+	border-style: solid;border-color: #999999;
+	border-width: 1px;min-height: 350px;
+}
+.icons{
+	width: 130px;font-size: 60px;background-color: #d9d9d9;
+	padding: 5px 10px;height: 110px;
+	margin-top: -50px;
+	color: #df6c43;
+}
+.btn-primary{
+	background-color:#df6c43;border-radius: 0px;border-color: #df6c43;
+}
+.btn-primary1{
+	color: black;background-color: white;border-radius: 0px;border-color: black;border-radius: 25px;
+}
+.btn-primary2{
+	color: #fff; background-color:#e8491d;border-radius: 0px;border-color: #e8491d;border-radius: 25px;
+}
+#about{
+	width: 100%;
+	min-height: 600px;
+	background-color: #151717;
+	margin-top: 50px;
+}
+#aboutcompany{
+	font-size: 45px;
+	border-bottom-style: ridge;
+	border-bottom-color: #df6c43;
+	position: relative;
+	top:35px;
+	color: #fff;
+}
+#team{
+	position: relative;
+top:40px;
+}
+#ourteam{
+	font-size: 45px;
+	border-bottom-style: ridge;
+	font-weight: bold;
+	border-bottom-color: #df6c43;
+}
+.team-member{
+	text-align: center;
+	margin-top: 5px;
+}
+.icon i{
+	font-size: 20px;
+	height: 50px;
+	width: 50px;
+	background-color: #98e698;
+	padding: 18px;
+	border-radius: 50%;
+}
+
+#footer{
+	width: 100%;
+	min-height: 400px;
+	background-color: #151717;
+	position: relative;
+	top: 150px;	
+}
+ #Service1{
+	font-size: 30px;
+	border-bottom-style: ridge;
+	font-weight: bold;
+	border-bottom-color: #df6c43;
+    color: #fff;
+}   
+  #Service2{
+	font-size: 30px;
+	border-bottom-style: ridge;
+	font-weight: bold;
+	border-bottom-color: #df6c43;
+    color:#282e3e ;
+}      
+   #Service3{
+	font-size: 24px;
+	border-bottom-style: ridge;
+	font-weight: bold;
+	border-bottom-color: #df6c43;
+    color:#df6c43 ;
+}    
+    
+    
+    
+    
+      
+    .pixel-metro {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: auto;
+}
+.pixel-metro .content-metro {
+	display: none;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	z-index: 2;
+	/*3d option */
+	perspective: 600px;
+}
+.pixel-metro .content-metro a:hover{
+	text-decoration: none;
+}
+.pixel-metro .content-metro:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	z-index: 9999;
+	transition: border-color 0.5s;
+	box-sizing: border-box;
+	border-top-width: 0px;
+	border-bottom-width: 2px;
+	border-style: solid;
+	border-color: rgba(200,200,200,0);
+
+}
+.pixel-metro .content-metro:hover:before {
+	border-color: rgba(200,200,200,0.85);
+}
+.pixel-metro .content-metro .metro-sheet{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: none;
+	/*3d option*/
+	transform-style: preserve-3d;
+  	transition: transform 1s;
+	
+}
+.pixel-metro .content-metro .metro-sheet:first-child {
+	display: block;
+}
+.pixel-metro .content-metro .metro-sheet .icon-metro{
+	font-size: 4.3em;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top:50%;
+	left: 50%;
+}
+.pixel-metro .content-metro .metro-sheet .text-metro{
+	padding:5px;
+}
+.pixel-metro .content-metro .metro-sheet a{
+	color:#fff;
+}
+.pixel-metro .content-metro .metro-sheet img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/*3d option*/
+	backface-visibility: hidden;
+}
+.pixel-metro .content-metro .content-title {
+	padding: 8px;
+	background-color: rgba(0,0,0,0.65);
+	color:#eee;
+	position: absolute;
+	bottom: 0;
+}
+.pixel-metro .page-metro {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding:8px;
+}
+.pixel-metro .page-metro span{
+	width: 8px;
+	height: 8px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.35);
+	margin: 0 2px;
+	cursor: pointer;
+}
+.pixel-metro .caption-smart {
+	color:#fff;
+	text-shadow: 2px 2px 3px #333;
+	position: absolute;
+	display: none;
+	opacity:0;
+}
+          .pindicator {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto 0;
+  width: 30rem;
+}
+
+.pindicator .bullet {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.pindicator .bullet::before,
+.pindicator .bullet::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: .5rem;
+  top: 1.25rem;
+  -webkit-transform: translate3d(0, 0, -1px);
+          transform: translate3d(0, 0, -1px);
+}
+
+.pindicator .bullet::before {
+  background-color: lightgray;
+  width: 100%;
+}
+
+.pindicator .bullet::after {
+  background-color: black;
+  -webkit-transition: opacity .25s ease-out;
+  transition: opacity .25s ease-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.pindicator .bullet:first-child::before,
+.pindicator .bullet:first-child::after {
+  left: 50%;
+  width: 50%;
+}
+
+.pindicator .bullet:last-child::before,
+.pindicator .bullet:last-child::after {
+  width: 50%;
+}
+
+.pindicator .icon {
+  background-color: lightgray;
+  border-radius: 100%;
+  color: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: inline-block;
+  height: 2em;
+  line-height: 2;
+  text-align: center;
+  -webkit-transition: background-color .25s ease-out;
+  transition: background-color .25s ease-out;
+  width: 2em;
+}
+
+.pindicator .text {
+  color: lightgray;
+  font-size: .75rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: background-color .25s ease-out;
+  transition: background-color .25s ease-out;
+}
+
+.pindicator .past .icon,
+.pindicator .current .icon {
+  background-color: black;
+  color: white;
+}
+
+.pindicator .past::after,
+.pindicator .current::after {
+  opacity: 1;
+}
+
+.pindicator .past .text,
+.pindicator .current .text,
+.pindicator .next .text {
+  color: black;
+}
+  
+    
+   
+</style>
+<body>
+
+	<nav class="navbar navbar-custom navbar-nav navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="navbar-header">
+			
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+</button>
+				<a href="#" class="navbar-brand">Scorpion</a>
+			</div>
+			</div>
+			<div class="col-md-8">
+			<div class="collapse navbar-collapse" id="robust">
+				<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Technology.html">Technology</a></li>
+				<li class="active"><a href="Gallery.html">Gallery</a></li>
+				<li><a href="About Us.html">About Us</a></li>
+				<li><a href="Contact Us.html">Contact Us</a></li>
+			</ul>
+			</div>
+			</div>
+		</div>
+		</div>
+	</nav>
+	<br><br>
+		<div id="about">
+		<div class="container">
+	<center><strong id="aboutcompany">Website Gallery</strong></center><br><br><br><br>
+          
+            
+            
+            
+            
+            
+            
+            
+            
+            <section>
+		
+		<div class="your-css">
+
+			<div class="pixel-metro">
+	            <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img01.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img02.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img03.png"></a>
+	                </div>
+	            </div>
+                <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index1.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img04.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index1.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img05.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index1.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img06.png"></a>
+	                </div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index2.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img07.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index2.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img08.png"></a>
+	                </div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index2.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img09.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index2.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img10.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index3.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img11.png"></a>
+	                </div>
+				</div>
+	            <div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index4.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img12.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index4.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img13.png"></a>
+	                </div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index5.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img14.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index5.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img15.png"></a>
+	                </div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index6.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img16.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index6.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img17.png"></a>
+	                </div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+	            	<a href="video gallery/index.html"><div class="metro-sheet">
+	                	<div class="text-metro">
+	                		<p><span class="glyphicon glyphicon-camera"></span></p><p>VIDEOS</p>
+	                	</div>
+	                </div></a>
+                    
+                    
+                    
+                    
+	            	<div class="metro-sheet">
+	                	<div class="icon-metro"><a href="#"><span class="glyphicon glyphicon-camera"></span></a></div>
+	                </div>
+	            </div>
+
+	            <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index3.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img18.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index3.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img19.png"></a>
+	                </div>
+	            </div>
+	            <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index3.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img20.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index3.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img21.png"></a>
+	                </div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index5.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img22.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index5.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img23.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index5.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img24.png"></a>
+	                </div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img25.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img26.png"></a>
+	                </div>
+				</div>
+	            <div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img27.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img28.png"></a>
+	                </div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img29.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img30.png"></a>
+	                </div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index5.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img31.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index5.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img32.png"></a>
+	                </div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+	            	<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index6.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img33.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index6.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img34.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<div class="icon-metro"><a href="#"><span class="glyphicon glyphicon-fire"></span></a></div>
+	                </div>
+	            </div>
+
+	            <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index7.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img35.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index7.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img36.png"></a>
+	                </div>
+	            </div>
+                <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index8.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img37.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index8.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img38.png"></a>
+	                </div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index9.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img39.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index9.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img40.png"></a>
+	                </div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index10.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img41.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index10.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img42.png"></a>
+	                </div>
+				</div>
+	            <div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img43.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img44.png"></a>
+	                </div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img45.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img46.png"></a>
+	                </div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img47.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img48.png"></a>
+	                </div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img49.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img50.png"></a>
+	                </div>
+	            </div>
+
+	            <div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img51.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img52.png"></a>
+	                </div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img53.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img54.png"></a>
+	                </div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img55.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img56.png"></a>
+	                </div>
+	            </div>
+        
+                <div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img57.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img58.png"></a>
+	                </div>
+				</div>
+                <div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img59.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img60.png"></a>
+	                </div>
+				</div>
+	            <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img61.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img62.png"></a>
+	                </div>
+	            </div>
+	            <div class="content-metro" size-o="normal">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img63.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img64.png"></a>
+	                </div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img65.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img66.png"></a>
+	                </div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img05.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img07.png"></a>
+	                </div>
+				</div>
+	            <div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img09.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img11.png"></a>
+	                </div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img13.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img15.png"></a>
+	                </div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+					<div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img17.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img19.png"></a>
+	                </div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+	            	<div id="b1" class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img21.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img23.png"></a>
+	                </div>
+	                <div class="metro-sheet">
+	                	<a href="swiper-master/demos/index.html"><img src="https://raw.githubusercontent.com/scorpioninformer/images/master/thumb/img25.png"></a>
+	                </div>
+	            </div>
+	            
+	        </div>
+	        <script type="text/javascript">
+	            $(".pixel-metro").pixel_metro({
+	            	height:"500px",
+	            	bg_metro:"bg-metro2.jpg",
+	            	bg_opacity:0.55,
+	            	metro_rows:3,
+	            });
+	        </script>
+
+	    </div>
+	</section>
+            </div></div>
+            
+            
+            
+	<div id="team">
+	<div class="container">
+
+	<div class="row">
+		<center><strong id="ourteam">WHAT'S NEXT</strong></center><br><br>
+        <p style="color:#000000;text-align: center;font-size: 20px;">How this sketche and design creates your dream home? 
+Excellently designed only to your homes when compared to the others. Texture,  patterns and colours are using in standard manners. The final sketches will be compared with original after completion of work. We ensures this will 100 percentage matching with it<br><br>
+            
+            Construction of building will pIay an important role in beautiful homes. So we are introducing best way of constructions to homes with a best way. <br>
+We use smaller areas with better constructions to your homes. We use modern technology and create tremendous constructions. This is the best place where you can get maximum usage of creative thinking and collaborative innovation.  
+We hope you will experience ever best way of constructions of us.
+</p>
+      
+	<div class="col-md-3">
+          
+        
+		
+  
+        
+        
+        
+	</div>
+	</div>
+        </div>
+  <div class="pindicator">
+  <div class="bullet past">
+    <a href="https://scorpioninformer123.github.io/Scorpion_Informer/"><span class="icon">1</span>
+    <div class="text">Slider</div></a>
+  </div>
+  <div class="bullet past">
+    <a href="index.html"><span class="icon">2</span>
+    <div class="text">index</div></a>
+  </div>
+  <div class="bullet past">
+    <a href="Technology.html"><span class="icon">3</span>
+    <div class="text">Technology</div></a>
+  </div>
+  <div class="bullet past">
+    <a href="Website Gallery.html"><span class="icon">4</span>
+    <div class="text">Website</div></a>
+  </div>
+  <div class="bullet current">
+    <a href="About Us.html"><span class="icon">5</span>
+    <div class="text">About</div></a>
+  </div>
+  <div class="bullet next feauture">
+    <a href="Contact Us.html"><span class="icon">6</span>
+    <div class="text">Contact</div></a>
+  </div>
+</div>
+	</div>
+            
+            
+            
+            
+            
+            
+		
+    
+    
+    
+    
+    
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
